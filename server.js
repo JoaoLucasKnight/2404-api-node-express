@@ -1,6 +1,8 @@
 const http = require("http")
 const port = 3000;
 
+
+// crianod as rotas
 const rotas = {
   '/': 'Curso de Node',
   '/livros': 'Entrei na pag de livros',
@@ -17,3 +19,5 @@ const server = http.createServer((req, res) => {
 server.listen(port, () => {
   console.log(`Servidor escutando em http://localhost:${port}`)
 })
+
+// instalação do nodemon para automatizar a atualização do serve
